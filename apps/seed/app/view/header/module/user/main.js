@@ -1,0 +1,5 @@
+define([
+    './directive/headerUser'
+], function () {
+
+});

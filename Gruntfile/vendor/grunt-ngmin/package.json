@@ -1,0 +1,21 @@
+{
+  "name": "grunt-ngmin",
+  "version": "0.0.3",
+  "description": "Grunt task for minifying AngularJS projects",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/btford/grunt-ngmin"
+  },
+  "keywords": [
+    "grunt",
+    "gruntplugin",
+    "angular",
+    "angularjs",
+    "minify"
+  ],
+  "author": "Brian Ford",
+  "license": "BSD",
+  "dependencies": {
+    "ngmin": "~0.4.0"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "grunt-browserify-wrap",
+  "version": "0.2.1",
+  "description": "Load multiple grunt tasks using globbing patterns",
+  "keywords": [
+    "grunt",
+    "browserify",
+    "wrap"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Eryk Napierała",
+    "email": "eryk.piast@gmail.com"
+  },
+  "files": [
+    "main.js"
+  ],
+  "main": "main",
+  "dependencies": {
+    "convert-source-map": "^0.3.3",
+    "extend": "^1.2.1",
+    "async": "^0.7.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}

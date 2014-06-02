@@ -1,0 +1,7 @@
+.idea
+.sass-cache
+.DS_Store
+atlassian-ide-plugin.xml
+node_modules
+_build
+apps/seed/vendor
