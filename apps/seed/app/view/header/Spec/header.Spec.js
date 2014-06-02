@@ -1,18 +1,18 @@
 /*global describe, beforeEach, inject, module*/
 
 define([
-    'view/header/main'
+    'view/header/header.index'
 ], function () {
     'use strict';
 
     describe('view/header/controller Test', function () {
 
-        beforeEach(module('myApp.header'));
+        beforeEach(module('seed.header'));
 
         beforeEach(inject(function ($rootScope, $controller) {
             this.scope = $rootScope.$new();
 
-            $controller('header', {
+            $controller('seedHeader', {
                 $scope: this.scope
             });
 

@@ -7,11 +7,11 @@ define([
             header: true,
             user: true
         },
+
         toggle: function (deps) {
             return deps.filter(function (dep) {
                 return dep;
             });
         }
     };
-
 });

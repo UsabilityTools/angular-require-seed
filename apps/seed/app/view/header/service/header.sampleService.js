@@ -4,8 +4,8 @@ define([
 ], function (angular) {
     'use strict';
 
-    return angular.module('myApp.header')
-        .factory('sampleService', function () {
+    return angular.module('seed.header')
+        .factory('seedSampleService', function () {
             var i = 1;
 
             function Foo() {

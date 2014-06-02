@@ -1,5 +1,5 @@
 define([
-    'helper/features'
+    'common/helper/features'
 ], function (features) {
     'use strict';
 

@@ -1,5 +1,0 @@
-define([
-    './directive/headerUser'
-], function () {
-
-});

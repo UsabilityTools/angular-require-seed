@@ -42,13 +42,13 @@ module.exports = {
             },
             {
                 cwd: '<%= conf.appPath %>/<%= conf.appName%>/vendor/angular',
-                src: [ 'angular.min.js' ],
+                src: [ 'angular.js' ],
                 dest: '<%= conf.target %>/vendor',
                 expand: true
             },
             {
                 cwd: '<%= conf.appPath %>/<%= conf.appName%>/vendor/angular-bootstrap/dist',
-                src: [ 'ui-bootstrap-0.11.0.min.js' ],
+                src: [ 'ui-bootstrap-0.11.0.js' ],
                 dest: '<%= conf.target %>/vendor',
                 expand: true
             },
@@ -60,7 +60,7 @@ module.exports = {
             },
             {
                 cwd: '<%= conf.appPath %>/<%= conf.appName%>/vendor/angular-router/release',
-                src: [ 'angular-ui-router.min.js' ],
+                src: [ 'angular-ui-router.js' ],
                 dest: '<%= conf.target %>/vendor',
                 expand: true
             },

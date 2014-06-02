@@ -3,7 +3,7 @@ define([
 ], function (angular) {
     'use strict';
 
-    var user = angular.module('myApp.header.user', []);
+    var user = angular.module('seed.header.user', []);
 
     return user;
 });

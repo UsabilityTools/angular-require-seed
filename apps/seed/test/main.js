@@ -8,9 +8,9 @@ requirejs.config({
 
     paths: {
         text: '../vendor/text',
-        angular: '../vendor/angular.min',
-        'ui.bootstrap': '../vendor/ui-bootstrap-0.11.0.min',
-        'ui.router': '../vendor/angular-ui-router.min',
+        angular: '../vendor/angular',
+        'ui.bootstrap': '../vendor/ui-bootstrap-0.11.0',
+        'ui.router': '../vendor/angular-ui-router',
 
         mocks: '../test/vendor/angular-mocks'
     },
@@ -24,14 +24,7 @@ requirejs.config({
     }
 });
 
-require([
-    'mocks',
-    'angular',
-    'app',
-
-    'ui.bootstrap',
-    'ui.router'
-], function () {
+require(['app', 'mocks'], function () {
     require(tests, function () {
         window.__karma__.start();
     });
