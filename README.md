@@ -1,14 +1,14 @@
 angular-require-seed
 ====================
 
-##dist
+####dist
 grunt --appName=seed 
 
-##dev
+####dev
 grunt --appName=seed --env=dev
 
-##test
+####test
 grunt --appName=seed test
 
-##gruntfile.js:36
+####gruntfile.js:36
 deployPath: '/opt/devel/seed' -> where should the application be deployed after dev/dist build
