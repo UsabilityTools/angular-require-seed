@@ -1,0 +1,16 @@
+.sidebar-wrapper {
+  height: 100%;
+  overflow: auto;
+  padding: 0;
+  margin: 0;
+  transition: width 250ms ease-in-out;
+
+  &.sidebarHidden {
+    width: 0;
+  }
+
+  & > .navbar {
+    height: 100%;
+    margin: 0;
+  }
+}

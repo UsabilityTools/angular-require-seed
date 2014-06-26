@@ -1,0 +1,80 @@
+define([
+    'angular',
+
+    'common/helpers/features/features',
+
+    './sub/project/project.state.module',
+    './views/header/root__header.view.module',
+    './views/footer/root__footer.view.module',
+    './views/sidebar/root__sidebar.view.module',
+    './views/content/root__content.view.module',
+
+    'ui.router',
+    'restangular'
+], function (
+    angular,
+
+    features,
+
+    MProjectState,
+    MRootFooterView,
+    MRootHeaderView,
+    MRootSidebarView,
+    MRootContentView
+
+    // _uiRouter,
+    // _restangular
+    ) {
+    'use strict';
+
+    return angular.module('ts.root.state', features.toggle([
+        (features.data.project && MProjectState.name),
+        MRootHeaderView.name,
+        MRootFooterView.name,
+        MRootSidebarView.name,
+        MRootContentView.name,
+        'ui.router',
+        'restangular'
+    ]))
+    .config(function ($stateProvider, $urlRouterProvider, VRootHeader, VRootFooter, VRootSidebar, VRootContent) {
+        $urlRouterProvider
+            .rule(function($injector, $location) {
+                var path = $location.path();
+                var search = $location.search();
+
+                // check to see if the path already ends in '/'
+                if (path[path.length - 1] === '/') {
+                    return;
+                } else if (Object.keys(search).length === 0) {
+                // If there was no search string / query params, return with a `/`
+                    return path + '/';
+                } else {
+                // Otherwise build the search string and return a `/?` prefix
+                    var params = [];
+                    angular.forEach(search, function(v, k){
+                        params.push(k + '=' + v);
+                    });
+
+                    return path + '/?' + params.join('&');
+                }
+            })
+            .otherwise('/');
+
+        $stateProvider
+            .state('root', {
+                url: '/',
+                views: {
+                    'header': VRootHeader,
+                    'footer': VRootFooter,
+                    'sidebar': VRootSidebar,
+                    'content': VRootContent
+                },
+                resolve: {
+                    RProject: function(Restangular) {
+                        return Restangular.service('projects');
+                    }
+                }
+            });
+    });
+
+});

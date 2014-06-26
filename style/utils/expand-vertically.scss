@@ -1,0 +1,11 @@
+@mixin expand-vertically($expanded, $parent) {
+	#{$expanded} {
+		@extend .flex-item !optional;
+		@extend .flex-item--expanded-vertically;
+	}
+
+	#{$parent} {
+		@extend .flex-container;
+		@extend .flex-container--column;
+	}
+}

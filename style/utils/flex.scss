@@ -1,0 +1,15 @@
+.flex {
+	&-container {
+		display: flex;
+
+		&--column {
+			flex-direction: column;
+		}
+	}
+
+	&-item {
+		&--expanded-vertically {
+			flex-grow: 1;
+		}
+	}
+}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>ToyStory</title>
+
+    <link rel="stylesheet" href="styles/app.css"/>
+
+    <script async src="vendor/require.js" data-main="main.js"></script>
+</head>
+<body>
+
+<header
+        class="header-wrapper"
+        ui-view="header">
+</header>
+
+<div class="wrapper-over-footer">
+    <div
+        class="content-wrapper"
+        ui-view="content"
+        >
+    </div>
+</div>
+
+<footer
+        class="footer-wrapper"
+        ui-view="footer">
+</footer>
+
+</body>
+</html>

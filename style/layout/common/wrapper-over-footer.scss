@@ -1,0 +1,6 @@
+/* Wrapper for page content to push down footer */
+@include scut-sticky-footer-fixed($panelHeight, '.wrapper-over-footer', '.footer-wrapper');
+
+.wrapper-over-footer {
+	
+}

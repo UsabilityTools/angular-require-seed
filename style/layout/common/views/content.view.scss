@@ -1,0 +1,6 @@
+@include expand-vertically('.content-wrapper', '.wrapper-over-footer');
+
+.content-wrapper {
+	margin-top: $panelHeight;
+	min-height: 100%;
+}

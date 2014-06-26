@@ -1,0 +1,12 @@
+@import 'common/variables';
+
+@import 'common/body';
+@import 'common/wrapper-over-footer';
+
+@import 'common/views/header.view';
+@import 'common/views/content.view';
+@import 'common/views/footer.view';
+
+@import 'states/root/views/root__header.view';
+@import 'states/root/views/root__content.view';
+@import 'states/root/views/root__footer.view';
