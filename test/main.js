@@ -15,8 +15,11 @@ requirejs.config({
     paths: {
         text: '../vendor/text',
         angular: '../vendor/angular',
-        'ui.bootstrap': '../vendor/ui-bootstrap-0.11.0',
         'ui.router': '../vendor/angular-ui-router',
+        'restangular': '../vendor/restangular',
+        'ui.bootstrap': '../vendor/angular-ui-bootstrap',
+        'lodash': '../vendor/lodash',
+        'angular-bootstrap-directives': '../vendor/angular-bootstrap-directives',
 
         mocks: '../test/vendor/angular-mocks'
     },
@@ -24,8 +27,13 @@ requirejs.config({
         'angular': {
             'exports': 'angular'
         },
-        'ui.bootstrap': ['angular'],
+        'lodash': {
+            'exports': '_'
+        },
         'ui.router': ['angular'],
+        'restangular': ['angular', 'lodash'],
+        'ui.bootstrap': ['angular'],
+        'angular-bootstrap-directives': ['angular'],
         mocks: ['angular']
     }
 });

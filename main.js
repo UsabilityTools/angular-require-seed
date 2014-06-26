@@ -7,8 +7,7 @@ require.config({
         'restangular': '../vendor/restangular',
         'ui.bootstrap': '../vendor/angular-ui-bootstrap',
         'lodash': '../vendor/lodash',
-        'angular-bootstrap-directives': '../vendor/angular-bootstrap-directives',
-        'vr-player': '../../vr-player/player'
+        'angular-bootstrap-directives': '../vendor/angular-bootstrap-directives'
     },
     shim: {
         'angular': {
